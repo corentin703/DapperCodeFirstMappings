@@ -11,6 +11,9 @@
     <RepositoryUrl>https://github.com/corentin703/DapperCodeFirstMappings</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dapper;mappings;code-first</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
