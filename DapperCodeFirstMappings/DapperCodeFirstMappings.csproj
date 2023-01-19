@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>$(AssemblyName)</Title>
+    <Authors>Corentin VÉROT</Authors>
+    <Company />
+    <Description>A much simple library that add code first POCOs' properties to database columns mapping capabilities to Dapper.</Description>
+    <PackageProjectUrl>https://github.com/corentin703/DapperCodeFirstMappings</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/corentin703/DapperCodeFirstMappings</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dapper;mappings;code-first</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
