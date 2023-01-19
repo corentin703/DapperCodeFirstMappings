@@ -1,8 +1,11 @@
 name: publish to nuget
 on:
-  tag:
+  push:
+    tags:
+      - '*'
     branches:
-      - main # Default release branch, may also be named 'master' or 'develop'
+      - main
+      
 jobs:
   publish:
     name: build, pack & publish
